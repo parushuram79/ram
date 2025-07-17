@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class main{
+        public static void main(String[] args)
+        {
+            Scanner sc=new Scanner(System.in);
+            int x=sc.nextInt();
+            int y=sc.nextInt();
+            int gcd=0;
+            int a=0;
+            if(x>y)
+            {
+                 a=x;
+            }else
+            {
+                a=y;
+            }
+                for(int i=1;i<=a;i++)
+                {
+                    if(x%i==0&&y%i==0)
+                    {
+                       gcd=Math.max(gcd,i);
+                    }
+                }
+                System.out.println("gcd=:"+gcd);
+                int lcm=0;
+                lcm=(x*y)/gcd;
+            System.out.println("lcm="+lcm);
+            
+        }
+}
