@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class main{
+        public static void main(String[] args)
+        {
+            Scanner sc=new Scanner(System.in);
+            int x=sc.nextInt();
+            int og=x;
+            int rev=0;
+            if(x<10)
+            {
+                System.out.println("the reverse of number is :"+x);
+            }
+            else
+            {
+             while (x != 0)
+             {
+                int d = x % 10;      
+                rev = (rev * 10) + d; 
+                x = x / 10; 
+                }
+        }
+            System.out.println("the reverse of number is :"+rev);
+            if(og==rev)
+            {
+                System.out.println("Palindrome");
+            }else
+            {
+                 System.out.println(" Not Palindrome");
+            }
+             
+        }
+}
