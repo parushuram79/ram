@@ -1,0 +1,26 @@
+class rev{
+        public static void main(String[] args)
+        {
+            Scanner sc=new Scanner(System.in);
+            int x=sc.nextInt();
+            int rev=0;
+            int c=0;
+            int sumrev=0;
+            if(x<10)
+            {
+                System.out.println("the reverse of number is :"+x);
+            } else
+            {
+             while (x != 0) {
+                int d = x % 10;       // Get last digit
+                rev = (rev * 10) + d; // Build reverse number
+                x = x / 10;  
+                c=c+1;              //no of digits
+                sumrev=sumrev+d;  //sum of digits
+            }
+            System.out.println("the reverse of number is :"+rev);
+            System.out.println("no of digits :"+c);
+            System.out.println("sum of digits :"+sumrev);
+            }
+        }
+}
