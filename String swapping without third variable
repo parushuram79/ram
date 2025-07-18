@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        String b=sc.nextLine();
+         a = a + b; // a = "HelloWorld"
+
+        b = a.substring(0, a.length() - b.length()); // b = "Hello"
+
+        a = a.substring(b.length()); // a = "World"
+
+        
+        System.out.println("a: " + a); // a: World
+        System.out.println("b: " + b); // b: Hello
+         
+       
+    }
+}
