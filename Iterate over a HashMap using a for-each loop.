@@ -1,0 +1,13 @@
+import java.util.HashMap;
+
+class Main {
+    public static void main(String[] args) {
+        HashMap<String, Integer> marks = new HashMap<>();
+        marks.put("Math", 90);
+        marks.put("Science", 85);
+        marks.put("English", 88);
+        for (var entry : marks.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
