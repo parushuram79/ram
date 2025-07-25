@@ -1,0 +1,16 @@
+import java.util.HashMap;
+class Main {
+    public static void main(String[] args) {
+      HashMap<String,Integer> scores=new HashMap<>();
+      scores.put("Alice",85);
+      scores.put("Ram",75);
+      scores.put("Raj",85);
+      String key="Ram";
+      if(scores.containsaKey(key))
+      {
+          System.out.println("its contain value");
+      }else{
+          System.out.println("its not contain value");
+      }
+    }
+}
