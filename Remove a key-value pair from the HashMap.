@@ -1,0 +1,19 @@
+import java.util.HashMap;
+
+class Main {
+    public static void main(String[] args) {
+        HashMap<String, Integer> marks = new HashMap<>();
+        marks.put("Math", 90);
+        marks.put("Science", 85);
+        marks.put("English", 88);
+        System.out.println("before-------------------------------- ");
+        for (var entry : marks.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+        marks.remove("Math");
+        System.out.println("after-------------------------------- ");
+        for (var entry : marks.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
