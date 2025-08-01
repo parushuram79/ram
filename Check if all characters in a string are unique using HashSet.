@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
+
+        HashSet<Character> set = new HashSet<>();
+        boolean isUnique = true;
+
+        for (char c : str.toCharArray()) {
+            if (set.contains(c)) {
+                isUnique = false;
+                break;
+            }
+            set.add(c);
+        }
+
+        if (isUnique)
+            System.out.println("All characters are unique.");
+        else
+            System.out.println("There are duplicate characters.");
+    }
+}
