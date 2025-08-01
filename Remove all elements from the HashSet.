@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        HashSet<Integer> set = new HashSet<>();
+        set.add(10);
+        set.add(20);
+        set.add(30);
+        set.add(40);
+       System.out.println(set);
+       set.clear();
+       System.out.println(set);
+    }
+}
